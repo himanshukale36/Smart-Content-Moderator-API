@@ -11,7 +11,7 @@ class ModerationRequest(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_email = Column(String, index=True)
     content_type = Column(String)
-    content_hash = Column(String, unique=True)
+    content_hash = Column(String)
     status = Column(String, default="pending")
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
