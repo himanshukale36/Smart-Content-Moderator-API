@@ -23,4 +23,7 @@ uvicorn app.main:app --reload
 - `POST /api/v1/moderate/image`
 - `GET /api/v1/analytics/summary?user=user@example.com`
 
+## DOCS
+http://127.0.0.1:8000/docs
+
 Set environment variables `OPENAI_API_KEY`, `SLACK_WEBHOOK_URL`, and `BREVO_API_KEY` for full functionality.
